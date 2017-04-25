@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1DF256D1EAEF58800666229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256C1EAEF58800666229 /* main.m */; };
+		C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256F1EAEF58800666229 /* AppDelegate.m */; };
+		C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25721EAEF58800666229 /* FirstViewController.m */; };
+		C1DF25761EAEF58800666229 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25751EAEF58800666229 /* SecondViewController.m */; };
+		C1DF25791EAEF58800666229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DF25771EAEF58800666229 /* Main.storyboard */; };
+		C1DF257B1EAEF58800666229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DF257A1EAEF58800666229 /* Assets.xcassets */; };
+		C1DF257E1EAEF58800666229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DF257C1EAEF58800666229 /* LaunchScreen.storyboard */; };
+		C1DF25891EAEF58800666229 /* CardReminderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25881EAEF58800666229 /* CardReminderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1DF25851EAEF58800666229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1DF25601EAEF58800666229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DF25671EAEF58800666229;
+			remoteInfo = CardReminder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1DF25681EAEF58800666229 /* CardReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DF256C1EAEF58800666229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1DF256E1EAEF58800666229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1DF256F1EAEF58800666229 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1DF25711EAEF58800666229 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		C1DF25721EAEF58800666229 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		C1DF25741EAEF58800666229 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C1DF25751EAEF58800666229 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C1DF25781EAEF58800666229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1DF257A1EAEF58800666229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1DF257D1EAEF58800666229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1DF257F1EAEF58800666229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DF25841EAEF58800666229 /* CardReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DF25881EAEF58800666229 /* CardReminderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardReminderTests.m; sourceTree = "<group>"; };
+		C1DF258A1EAEF58800666229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1DF25651EAEF58800666229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DF25811EAEF58800666229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1DF255F1EAEF58800666229 = {
+			isa = PBXGroup;
+			children = (
+				C1DF256A1EAEF58800666229 /* CardReminder */,
+				C1DF25871EAEF58800666229 /* CardReminderTests */,
+				C1DF25691EAEF58800666229 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1DF25691EAEF58800666229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25681EAEF58800666229 /* CardReminder.app */,
+				C1DF25841EAEF58800666229 /* CardReminderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1DF256A1EAEF58800666229 /* CardReminder */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF256E1EAEF58800666229 /* AppDelegate.h */,
+				C1DF256F1EAEF58800666229 /* AppDelegate.m */,
+				C1DF25711EAEF58800666229 /* FirstViewController.h */,
+				C1DF25721EAEF58800666229 /* FirstViewController.m */,
+				C1DF25741EAEF58800666229 /* SecondViewController.h */,
+				C1DF25751EAEF58800666229 /* SecondViewController.m */,
+				C1DF25771EAEF58800666229 /* Main.storyboard */,
+				C1DF257A1EAEF58800666229 /* Assets.xcassets */,
+				C1DF257C1EAEF58800666229 /* LaunchScreen.storyboard */,
+				C1DF257F1EAEF58800666229 /* Info.plist */,
+				C1DF256B1EAEF58800666229 /* Supporting Files */,
+			);
+			path = CardReminder;
+			sourceTree = "<group>";
+		};
+		C1DF256B1EAEF58800666229 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF256C1EAEF58800666229 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1DF25871EAEF58800666229 /* CardReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25881EAEF58800666229 /* CardReminderTests.m */,
+				C1DF258A1EAEF58800666229 /* Info.plist */,
+			);
+			path = CardReminderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1DF25671EAEF58800666229 /* CardReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DF258D1EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminder" */;
+			buildPhases = (
+				C1DF25641EAEF58800666229 /* Sources */,
+				C1DF25651EAEF58800666229 /* Frameworks */,
+				C1DF25661EAEF58800666229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardReminder;
+			productName = CardReminder;
+			productReference = C1DF25681EAEF58800666229 /* CardReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1DF25831EAEF58800666229 /* CardReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DF25901EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminderTests" */;
+			buildPhases = (
+				C1DF25801EAEF58800666229 /* Sources */,
+				C1DF25811EAEF58800666229 /* Frameworks */,
+				C1DF25821EAEF58800666229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1DF25861EAEF58800666229 /* PBXTargetDependency */,
+			);
+			name = CardReminderTests;
+			productName = CardReminderTests;
+			productReference = C1DF25841EAEF58800666229 /* CardReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1DF25601EAEF58800666229 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = danny;
+				TargetAttributes = {
+					C1DF25671EAEF58800666229 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 79787S2JEP;
+						ProvisioningStyle = Automatic;
+					};
+					C1DF25831EAEF58800666229 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 79787S2JEP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1DF25671EAEF58800666229;
+					};
+				};
+			};
+			buildConfigurationList = C1DF25631EAEF58800666229 /* Build configuration list for PBXProject "CardReminder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1DF255F1EAEF58800666229;
+			productRefGroup = C1DF25691EAEF58800666229 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1DF25671EAEF58800666229 /* CardReminder */,
+				C1DF25831EAEF58800666229 /* CardReminderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1DF25661EAEF58800666229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DF257E1EAEF58800666229 /* LaunchScreen.storyboard in Resources */,
+				C1DF257B1EAEF58800666229 /* Assets.xcassets in Resources */,
+				C1DF25791EAEF58800666229 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DF25821EAEF58800666229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1DF25641EAEF58800666229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DF25761EAEF58800666229 /* SecondViewController.m in Sources */,
+				C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */,
+				C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */,
+				C1DF256D1EAEF58800666229 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1DF25801EAEF58800666229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DF25891EAEF58800666229 /* CardReminderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1DF25861EAEF58800666229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1DF25671EAEF58800666229 /* CardReminder */;
+			targetProxy = C1DF25851EAEF58800666229 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1DF25771EAEF58800666229 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1DF25781EAEF58800666229 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1DF257C1EAEF58800666229 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1DF257D1EAEF58800666229 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1DF258B1EAEF58800666229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1DF258C1EAEF58800666229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1DF258E1EAEF58800666229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 79787S2JEP;
+				INFOPLIST_FILE = CardReminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danny.CardReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1DF258F1EAEF58800666229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 79787S2JEP;
+				INFOPLIST_FILE = CardReminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danny.CardReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1DF25911EAEF58800666229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 79787S2JEP;
+				INFOPLIST_FILE = CardReminderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danny.CardReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardReminder.app/CardReminder";
+			};
+			name = Debug;
+		};
+		C1DF25921EAEF58800666229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 79787S2JEP;
+				INFOPLIST_FILE = CardReminderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danny.CardReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardReminder.app/CardReminder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1DF25631EAEF58800666229 /* Build configuration list for PBXProject "CardReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DF258B1EAEF58800666229 /* Debug */,
+				C1DF258C1EAEF58800666229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DF258D1EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DF258E1EAEF58800666229 /* Debug */,
+				C1DF258F1EAEF58800666229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1DF25901EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DF25911EAEF58800666229 /* Debug */,
+				C1DF25921EAEF58800666229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1DF25601EAEF58800666229 /* Project object */;
+}

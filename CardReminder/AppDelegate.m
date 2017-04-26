@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <AVOSCloud/AVOSCloud.h>
+#import "CRUserMananger.h"
+#import "CRCardMananger.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self initLeadCloud];
+    
+    [[CRUserMananger sharedInstance] initUserInfo];
+    
+    [[CRCardMananger sharedInstance] initCards];
+    
     return YES;
 }
 
@@ -46,6 +56,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - private methods
+
+- (void)initLeadCloud{
+    
+    
+    [AVOSCloud setApplicationId:LEANCLOUD_AID clientKey:LEANCLOUD_CID];
+    
+    [AVOSCloud setAllLogsEnabled:NO];
+    
+    
+}
+
 
 
 @end

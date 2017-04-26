@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5640242259F4A494688A9C1A /* libPods-CardReminderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD86D46AE2E48D79F71F1039 /* libPods-CardReminderTests.a */; };
+		A7CE2B3DA69635F31BF638DF /* libPods-CardReminder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA11913EDFF27EC26D28DCF9 /* libPods-CardReminder.a */; };
 		C1DF256D1EAEF58800666229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256C1EAEF58800666229 /* main.m */; };
 		C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256F1EAEF58800666229 /* AppDelegate.m */; };
 		C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25721EAEF58800666229 /* FirstViewController.m */; };
@@ -15,6 +17,17 @@
 		C1DF257B1EAEF58800666229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DF257A1EAEF58800666229 /* Assets.xcassets */; };
 		C1DF257E1EAEF58800666229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DF257C1EAEF58800666229 /* LaunchScreen.storyboard */; };
 		C1DF25891EAEF58800666229 /* CardReminderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25881EAEF58800666229 /* CardReminderTests.m */; };
+		C1DF25951EAEF99700666229 /* CRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25941EAEF99700666229 /* CRLoginViewController.m */; };
+		C1DF259B1EAF03B200666229 /* CRMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF259A1EAF03B200666229 /* CRMainTabViewController.m */; };
+		C1DF259F1EAF206C00666229 /* CRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF259E1EAF206C00666229 /* CRUser.m */; };
+		C1DF25A81EAF263300666229 /* CRTextCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25A71EAF263300666229 /* CRTextCardView.m */; };
+		C1DF25AB1EAF271F00666229 /* CRCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25AA1EAF271F00666229 /* CRCardViewController.m */; };
+		C1DF25AE1EAF28AA00666229 /* CRWebCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25AD1EAF28AA00666229 /* CRWebCardView.m */; };
+		C1DF25B11EAF2DA200666229 /* CRBaseCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25B01EAF2DA200666229 /* CRBaseCardView.m */; };
+		C1DF25B41EAF319500666229 /* CRCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25B31EAF319500666229 /* CRCardModel.m */; };
+		C1DF25BF1EAF613D00666229 /* CRFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25BE1EAF613D00666229 /* CRFlashViewController.m */; };
+		C1DF25C21EAF62F000666229 /* CRUserMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25C11EAF62F000666229 /* CRUserMananger.m */; };
+		C1DF25C51EAF665B00666229 /* CRCardMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25C41EAF665B00666229 /* CRCardMananger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52A11B5E94B8174911BA6C0E /* Pods-CardReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminder/Pods-CardReminder.release.xcconfig"; sourceTree = "<group>"; };
+		9A0F22C18426A4110658B808 /* Pods-CardReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminderTests/Pods-CardReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABA7006ED145F6ACBBE90734 /* Pods-CardReminderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminderTests/Pods-CardReminderTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1DF25681EAEF58800666229 /* CardReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DF256C1EAEF58800666229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1DF256E1EAEF58800666229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +59,34 @@
 		C1DF25841EAEF58800666229 /* CardReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DF25881EAEF58800666229 /* CardReminderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardReminderTests.m; sourceTree = "<group>"; };
 		C1DF258A1EAEF58800666229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DF25931EAEF99700666229 /* CRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLoginViewController.h; sourceTree = "<group>"; };
+		C1DF25941EAEF99700666229 /* CRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLoginViewController.m; sourceTree = "<group>"; };
+		C1DF25961EAEFA3800666229 /* CardReminder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CardReminder-Prefix.pch"; path = "CardReminder/CardReminder-Prefix.pch"; sourceTree = "<group>"; };
+		C1DF25971EAEFACB00666229 /* GlobalMarcro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalMarcro.h; sourceTree = "<group>"; };
+		C1DF25981EAF014200666229 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		C1DF25991EAF03B200666229 /* CRMainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMainTabViewController.h; sourceTree = "<group>"; };
+		C1DF259A1EAF03B200666229 /* CRMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMainTabViewController.m; sourceTree = "<group>"; };
+		C1DF259D1EAF206C00666229 /* CRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRUser.h; path = Model/CRUser.h; sourceTree = "<group>"; };
+		C1DF259E1EAF206C00666229 /* CRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRUser.m; path = Model/CRUser.m; sourceTree = "<group>"; };
+		C1DF25A61EAF263300666229 /* CRTextCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRTextCardView.h; path = View/CRTextCardView.h; sourceTree = "<group>"; };
+		C1DF25A71EAF263300666229 /* CRTextCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRTextCardView.m; path = View/CRTextCardView.m; sourceTree = "<group>"; };
+		C1DF25A91EAF271F00666229 /* CRCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardViewController.h; sourceTree = "<group>"; };
+		C1DF25AA1EAF271F00666229 /* CRCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardViewController.m; sourceTree = "<group>"; };
+		C1DF25AC1EAF28AA00666229 /* CRWebCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRWebCardView.h; path = View/CRWebCardView.h; sourceTree = "<group>"; };
+		C1DF25AD1EAF28AA00666229 /* CRWebCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRWebCardView.m; path = View/CRWebCardView.m; sourceTree = "<group>"; };
+		C1DF25AF1EAF2DA200666229 /* CRBaseCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRBaseCardView.h; path = View/CRBaseCardView.h; sourceTree = "<group>"; };
+		C1DF25B01EAF2DA200666229 /* CRBaseCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRBaseCardView.m; path = View/CRBaseCardView.m; sourceTree = "<group>"; };
+		C1DF25B21EAF319500666229 /* CRCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCardModel.h; path = Model/CRCardModel.h; sourceTree = "<group>"; };
+		C1DF25B31EAF319500666229 /* CRCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCardModel.m; path = Model/CRCardModel.m; sourceTree = "<group>"; };
+		C1DF25BD1EAF613D00666229 /* CRFlashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFlashViewController.h; sourceTree = "<group>"; };
+		C1DF25BE1EAF613D00666229 /* CRFlashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFlashViewController.m; sourceTree = "<group>"; };
+		C1DF25C01EAF62F000666229 /* CRUserMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUserMananger.h; sourceTree = "<group>"; };
+		C1DF25C11EAF62F000666229 /* CRUserMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUserMananger.m; sourceTree = "<group>"; };
+		C1DF25C31EAF665B00666229 /* CRCardMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardMananger.h; sourceTree = "<group>"; };
+		C1DF25C41EAF665B00666229 /* CRCardMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardMananger.m; sourceTree = "<group>"; };
+		CA1017E964E98F0288553331 /* Pods-CardReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminder/Pods-CardReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		FA11913EDFF27EC26D28DCF9 /* libPods-CardReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardReminder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD86D46AE2E48D79F71F1039 /* libPods-CardReminderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardReminderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CE2B3DA69635F31BF638DF /* libPods-CardReminder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,18 +102,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5640242259F4A494688A9C1A /* libPods-CardReminderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144EF2A8084DF0301051121D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA1017E964E98F0288553331 /* Pods-CardReminder.debug.xcconfig */,
+				52A11B5E94B8174911BA6C0E /* Pods-CardReminder.release.xcconfig */,
+				9A0F22C18426A4110658B808 /* Pods-CardReminderTests.debug.xcconfig */,
+				ABA7006ED145F6ACBBE90734 /* Pods-CardReminderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4254768BDDC8F64A618C272C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA11913EDFF27EC26D28DCF9 /* libPods-CardReminder.a */,
+				FD86D46AE2E48D79F71F1039 /* libPods-CardReminderTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1DF255F1EAEF58800666229 = {
 			isa = PBXGroup;
 			children = (
+				C1DF25961EAEFA3800666229 /* CardReminder-Prefix.pch */,
 				C1DF256A1EAEF58800666229 /* CardReminder */,
 				C1DF25871EAEF58800666229 /* CardReminderTests */,
 				C1DF25691EAEF58800666229 /* Products */,
+				144EF2A8084DF0301051121D /* Pods */,
+				4254768BDDC8F64A618C272C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,17 +153,20 @@
 		C1DF256A1EAEF58800666229 /* CardReminder */ = {
 			isa = PBXGroup;
 			children = (
+				C1DF25971EAEFACB00666229 /* GlobalMarcro.h */,
 				C1DF256E1EAEF58800666229 /* AppDelegate.h */,
 				C1DF256F1EAEF58800666229 /* AppDelegate.m */,
 				C1DF25711EAEF58800666229 /* FirstViewController.h */,
 				C1DF25721EAEF58800666229 /* FirstViewController.m */,
 				C1DF25741EAEF58800666229 /* SecondViewController.h */,
 				C1DF25751EAEF58800666229 /* SecondViewController.m */,
+				C1DF259C1EAF03D900666229 /* Class */,
 				C1DF25771EAEF58800666229 /* Main.storyboard */,
 				C1DF257A1EAEF58800666229 /* Assets.xcassets */,
 				C1DF257C1EAEF58800666229 /* LaunchScreen.storyboard */,
 				C1DF257F1EAEF58800666229 /* Info.plist */,
 				C1DF256B1EAEF58800666229 /* Supporting Files */,
+				C1DF25981EAF014200666229 /* Config.h */,
 			);
 			path = CardReminder;
 			sourceTree = "<group>";
@@ -116,6 +188,91 @@
 			path = CardReminderTests;
 			sourceTree = "<group>";
 		};
+		C1DF259C1EAF03D900666229 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25BC1EAF60D700666229 /* Flash */,
+				C1DF25B91EAF609E00666229 /* CardView */,
+				C1DF25BB1EAF60CB00666229 /* Login */,
+				C1DF25991EAF03B200666229 /* CRMainTabViewController.h */,
+				C1DF259A1EAF03B200666229 /* CRMainTabViewController.m */,
+				C1DF25C01EAF62F000666229 /* CRUserMananger.h */,
+				C1DF25C11EAF62F000666229 /* CRUserMananger.m */,
+				C1DF25C31EAF665B00666229 /* CRCardMananger.h */,
+				C1DF25C41EAF665B00666229 /* CRCardMananger.m */,
+				C1DF259D1EAF206C00666229 /* CRUser.h */,
+				C1DF259E1EAF206C00666229 /* CRUser.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		C1DF25A01EAF207000666229 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25B21EAF319500666229 /* CRCardModel.h */,
+				C1DF25B31EAF319500666229 /* CRCardModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C1DF25A41EAF23E800666229 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25A61EAF263300666229 /* CRTextCardView.h */,
+				C1DF25A71EAF263300666229 /* CRTextCardView.m */,
+				C1DF25AC1EAF28AA00666229 /* CRWebCardView.h */,
+				C1DF25AD1EAF28AA00666229 /* CRWebCardView.m */,
+				C1DF25AF1EAF2DA200666229 /* CRBaseCardView.h */,
+				C1DF25B01EAF2DA200666229 /* CRBaseCardView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C1DF25B81EAF609200666229 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25A91EAF271F00666229 /* CRCardViewController.h */,
+				C1DF25AA1EAF271F00666229 /* CRCardViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C1DF25B91EAF609E00666229 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25A41EAF23E800666229 /* View */,
+				C1DF25A01EAF207000666229 /* Model */,
+				C1DF25B81EAF609200666229 /* Controller */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		C1DF25BA1EAF60C200666229 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25931EAEF99700666229 /* CRLoginViewController.h */,
+				C1DF25941EAEF99700666229 /* CRLoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C1DF25BB1EAF60CB00666229 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25BA1EAF60C200666229 /* Controller */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		C1DF25BC1EAF60D700666229 /* Flash */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF25BD1EAF613D00666229 /* CRFlashViewController.h */,
+				C1DF25BE1EAF613D00666229 /* CRFlashViewController.m */,
+			);
+			name = Flash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1DF258D1EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminder" */;
 			buildPhases = (
+				AE8F3D7869172954D856AF55 /* [CP] Check Pods Manifest.lock */,
 				C1DF25641EAEF58800666229 /* Sources */,
 				C1DF25651EAEF58800666229 /* Frameworks */,
 				C1DF25661EAEF58800666229 /* Resources */,
+				50FD7C7F49194CDA78A66FDE /* [CP] Embed Pods Frameworks */,
+				DCF1990006C862A503008681 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1DF25901EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminderTests" */;
 			buildPhases = (
+				58A438BE5CACE0B262896AA4 /* [CP] Check Pods Manifest.lock */,
 				C1DF25801EAEF58800666229 /* Sources */,
 				C1DF25811EAEF58800666229 /* Frameworks */,
 				C1DF25821EAEF58800666229 /* Resources */,
+				48BDD9BDDBF16F5716B24C91 /* [CP] Embed Pods Frameworks */,
+				AED243A1F41327FEB859B718 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +323,7 @@
 		C1DF25601EAEF58800666229 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CR;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = danny;
 				TargetAttributes = {
@@ -215,14 +379,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48BDD9BDDBF16F5716B24C91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardReminderTests/Pods-CardReminderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50FD7C7F49194CDA78A66FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardReminder/Pods-CardReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A438BE5CACE0B262896AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE8F3D7869172954D856AF55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AED243A1F41327FEB859B718 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardReminderTests/Pods-CardReminderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF1990006C862A503008681 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardReminder/Pods-CardReminder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1DF25641EAEF58800666229 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DF259F1EAF206C00666229 /* CRUser.m in Sources */,
+				C1DF259B1EAF03B200666229 /* CRMainTabViewController.m in Sources */,
+				C1DF25B11EAF2DA200666229 /* CRBaseCardView.m in Sources */,
+				C1DF25AB1EAF271F00666229 /* CRCardViewController.m in Sources */,
+				C1DF25AE1EAF28AA00666229 /* CRWebCardView.m in Sources */,
+				C1DF25C21EAF62F000666229 /* CRUserMananger.m in Sources */,
 				C1DF25761EAEF58800666229 /* SecondViewController.m in Sources */,
+				C1DF25C51EAF665B00666229 /* CRCardMananger.m in Sources */,
 				C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */,
+				C1DF25A81EAF263300666229 /* CRTextCardView.m in Sources */,
+				C1DF25951EAEF99700666229 /* CRLoginViewController.m in Sources */,
 				C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */,
+				C1DF25B41EAF319500666229 /* CRCardModel.m in Sources */,
+				C1DF25BF1EAF613D00666229 /* CRFlashViewController.m in Sources */,
 				C1DF256D1EAEF58800666229 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,9 +625,11 @@
 		};
 		C1DF258E1EAEF58800666229 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA1017E964E98F0288553331 /* Pods-CardReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79787S2JEP;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CardReminder/CardReminder-Prefix.pch";
 				INFOPLIST_FILE = CardReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danny.CardReminder;
@@ -369,9 +639,11 @@
 		};
 		C1DF258F1EAEF58800666229 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A11B5E94B8174911BA6C0E /* Pods-CardReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79787S2JEP;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CardReminder/CardReminder-Prefix.pch";
 				INFOPLIST_FILE = CardReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danny.CardReminder;
@@ -381,6 +653,7 @@
 		};
 		C1DF25911EAEF58800666229 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0F22C18426A4110658B808 /* Pods-CardReminderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 79787S2JEP;
@@ -394,6 +667,7 @@
 		};
 		C1DF25921EAEF58800666229 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA7006ED145F6ACBBE90734 /* Pods-CardReminderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 79787S2JEP;
@@ -424,6 +698,7 @@
 				C1DF258F1EAEF58800666229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1DF25901EAEF58800666229 /* Build configuration list for PBXNativeTarget "CardReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +707,7 @@
 				C1DF25921EAEF58800666229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

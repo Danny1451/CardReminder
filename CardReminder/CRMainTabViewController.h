@@ -10,4 +10,6 @@
 
 @interface CRMainTabViewController : UITabBarController
 
+
++ (instancetype)initMainTab;
 @end

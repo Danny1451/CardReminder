@@ -13,7 +13,7 @@
 
 @interface CRCardMananger()
 
-@property (nonatomic,strong) NSArray *cardsArrays;
+@property (nonatomic,strong) NSMutableArray *cardsArrays;
 
 @end
 

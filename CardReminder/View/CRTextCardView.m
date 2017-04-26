@@ -23,11 +23,15 @@
 }
 */
 
-- (void)reloadCard:(id)data{
+- (void)initView{
+    [self setBackgroundColor:[UIColor redColor]];
+}
+
+- (void)viewWillShow{
     
 }
 
-- (void)showCard{
+- (void)reloadView:(CRCardModel*) card{
     
 }
 

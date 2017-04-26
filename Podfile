@@ -10,7 +10,7 @@ target 'CardReminder' do
 pod 'AVOSCloud'               
 pod 'AVOSCloudCrashReporting'
 pod 'IQKeyboardManager'
-
+pod 'Masonry'
 
   target 'CardReminderTests' do
     inherit! :search_paths

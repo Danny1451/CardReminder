@@ -23,8 +23,11 @@
 }
 */
 
+- (void)initView{
+    [self setBackgroundColor:[UIColor blueColor]];
+}
 - (void)reloadCard:(id)data{
-    
+    [self setBackgroundColor:[UIColor blueColor]];
 }
 
 - (void)showCard{

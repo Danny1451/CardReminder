@@ -10,4 +10,9 @@
 
 @interface CRCardViewController : UIViewController
 
+
+- (instancetype)initWithCards:(NSArray *) array andIndex:(NSInteger) index;
+- (instancetype)initWithCards:(NSArray *) array;
+
+
 @end

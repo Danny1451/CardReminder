@@ -10,7 +10,9 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import "CRUserMananger.h"
 #import "CRCardMananger.h"
+#import "CRMainTabViewController.h"
 
+#import "UIViewController+CRVCAop.h"
 @interface AppDelegate ()
 
 @end
@@ -21,11 +23,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
     [self initLeadCloud];
     
     [[CRUserMananger sharedInstance] initUserInfo];
     
     [[CRCardMananger sharedInstance] initCards];
+    
+//    [self showMainTab];
+    
     
     return YES;
 }
@@ -55,6 +61,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) transToMainTab {
+ 
+    CRMainTabViewController *tabVc = [CRMainTabViewController initMainTab];
+    
+    
+    self.window.rootViewController = tabVc;
+    
+    [self.window makeKeyAndVisible];
+    
 }
 
 #pragma mark - private methods

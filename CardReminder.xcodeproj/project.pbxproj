@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5640242259F4A494688A9C1A /* libPods-CardReminderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD86D46AE2E48D79F71F1039 /* libPods-CardReminderTests.a */; };
 		A7CE2B3DA69635F31BF638DF /* libPods-CardReminder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA11913EDFF27EC26D28DCF9 /* libPods-CardReminder.a */; };
+		C10CF4B51EB098A500926C99 /* UIViewController+CRVCAop.m in Sources */ = {isa = PBXBuildFile; fileRef = C10CF4B41EB098A500926C99 /* UIViewController+CRVCAop.m */; };
+		C10CF4BE1EB0A25700926C99 /* CRCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10CF4BD1EB0A25700926C99 /* CRCardViewController.xib */; };
 		C1DF256D1EAEF58800666229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256C1EAEF58800666229 /* main.m */; };
 		C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256F1EAEF58800666229 /* AppDelegate.m */; };
 		C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25721EAEF58800666229 /* FirstViewController.m */; };
@@ -44,6 +46,9 @@
 		52A11B5E94B8174911BA6C0E /* Pods-CardReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminder/Pods-CardReminder.release.xcconfig"; sourceTree = "<group>"; };
 		9A0F22C18426A4110658B808 /* Pods-CardReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminderTests/Pods-CardReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABA7006ED145F6ACBBE90734 /* Pods-CardReminderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardReminderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardReminderTests/Pods-CardReminderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C10CF4B31EB098A500926C99 /* UIViewController+CRVCAop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CRVCAop.h"; sourceTree = "<group>"; };
+		C10CF4B41EB098A500926C99 /* UIViewController+CRVCAop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CRVCAop.m"; sourceTree = "<group>"; };
+		C10CF4BD1EB0A25700926C99 /* CRCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRCardViewController.xib; sourceTree = "<group>"; };
 		C1DF25681EAEF58800666229 /* CardReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DF256C1EAEF58800666229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1DF256E1EAEF58800666229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +172,8 @@
 				C1DF257F1EAEF58800666229 /* Info.plist */,
 				C1DF256B1EAEF58800666229 /* Supporting Files */,
 				C1DF25981EAF014200666229 /* Config.h */,
+				C10CF4B31EB098A500926C99 /* UIViewController+CRVCAop.h */,
+				C10CF4B41EB098A500926C99 /* UIViewController+CRVCAop.m */,
 			);
 			path = CardReminder;
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 			children = (
 				C1DF25A91EAF271F00666229 /* CRCardViewController.h */,
 				C1DF25AA1EAF271F00666229 /* CRCardViewController.m */,
+				C10CF4BD1EB0A25700926C99 /* CRCardViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -366,6 +374,7 @@
 			files = (
 				C1DF257E1EAEF58800666229 /* LaunchScreen.storyboard in Resources */,
 				C1DF257B1EAEF58800666229 /* Assets.xcassets in Resources */,
+				C10CF4BE1EB0A25700926C99 /* CRCardViewController.xib in Resources */,
 				C1DF25791EAEF58800666229 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +497,7 @@
 				C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */,
 				C1DF25A81EAF263300666229 /* CRTextCardView.m in Sources */,
 				C1DF25951EAEF99700666229 /* CRLoginViewController.m in Sources */,
+				C10CF4B51EB098A500926C99 /* UIViewController+CRVCAop.m in Sources */,
 				C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */,
 				C1DF25B41EAF319500666229 /* CRCardModel.m in Sources */,
 				C1DF25BF1EAF613D00666229 /* CRFlashViewController.m in Sources */,

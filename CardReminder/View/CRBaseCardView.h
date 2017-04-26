@@ -15,10 +15,22 @@
 
 @end
 
+@class CRCardModel;
 
 @interface CRBaseCardView : UIView
 
+
+@property (nonatomic,strong) CRCardModel *card;
 @property (nonatomic,weak) id<CRBaseCardDelegate> delegate;
 
++ (instancetype)cardViewWithCard:(CRCardModel*) card;
+
+- (void)initView;
+
+- (void)showView;
+
+- (void)viewWillShow;
+
+- (void)reloadView:(CRCardModel*) card;
 
 @end

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="CRCardTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZT5-cn-POw">
+                        <rect key="frame" x="13" y="13" width="110.5" height="110.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZT5-cn-POw" secondAttribute="height" multiplier="1:1" id="5e2-Bf-Npt"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vvt-hc-jUd">
+                        <rect key="frame" x="304.5" y="13" width="142.5" height="110.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ddddddddddLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNw-yQ-1LV">
+                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dasdasdad" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVu-Yh-LWS">
+                                <rect key="frame" x="0.0" y="37" width="142.5" height="36.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-TK-BEh">
+                                <rect key="frame" x="0.0" y="73.5" width="142.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tNw-yQ-1LV" secondAttribute="trailing" id="6ws-wT-Ac7"/>
+                            <constraint firstAttribute="trailing" secondItem="CVu-Yh-LWS" secondAttribute="trailing" id="F55-Mg-3hG"/>
+                            <constraint firstAttribute="trailing" secondItem="6ma-TK-BEh" secondAttribute="trailing" id="ns8-NT-CiP"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vvt-hc-jUd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="BTk-NE-k9V"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZT5-cn-POw" secondAttribute="bottom" constant="5" id="BaT-6A-7Hj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vvt-hc-jUd" secondAttribute="trailing" constant="5" id="CBK-k7-8Yh"/>
+                    <constraint firstItem="vvt-hc-jUd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="O9V-ox-l5A"/>
+                    <constraint firstItem="ZT5-cn-POw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="OxB-Tu-OMy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vvt-hc-jUd" secondAttribute="bottom" constant="5" id="XgZ-ZH-cbP"/>
+                    <constraint firstItem="ZT5-cn-POw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="q7Z-av-aL3"/>
+                    <constraint firstItem="ZT5-cn-POw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wSU-bT-EDD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardIcon" destination="ZT5-cn-POw" id="nNX-S4-Zch"/>
+                <outlet property="cardInfo" destination="CVu-Yh-LWS" id="XVa-nM-og7"/>
+                <outlet property="cardReadTime" destination="6ma-TK-BEh" id="2Ya-r8-g6k"/>
+                <outlet property="cardTitle" destination="tNw-yQ-1LV" id="2Yv-il-03L"/>
+            </connections>
+            <point key="canvasLocation" x="-140" y="-6.5"/>
+        </tableViewCell>
+    </objects>
+</document>

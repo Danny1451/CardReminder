@@ -7,9 +7,11 @@
 //
 
 #import "CRWebCardView.h"
+#import "CRCardModel.h"
 
+@interface CRWebCardView()<UIWebViewDelegate>
 
-@interface CRWebCardView()
+@property (nonatomic,strong) UIWebView *webView;
 
 @end
 
@@ -25,13 +27,55 @@
 
 - (void)initView{
     [self setBackgroundColor:[UIColor blueColor]];
-}
-- (void)reloadCard:(id)data{
-    [self setBackgroundColor:[UIColor blueColor]];
+    
+    
+    [self addSubview:self.webView];
+    
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.card.url]]];
 }
 
+
+- (void)updateConstraints{
+    [super updateConstraints];
+    
+    UIEdgeInsets inset = UIEdgeInsetsMake(15, 15, 15, 15);
+    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self).with.insets(inset);
+    }];
+}
+
+
+- (void)reloadCard:(id)data{
+    [self setBackgroundColor:[UIColor greenColor]];
+}
+
+- (void)reloadView:(CRCardModel*) card{
+    [self setBackgroundColor:[UIColor greenColor]];
+}
 - (void)showCard{
     
+}
+
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    TRACE(@" load started");
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    TRACE(@" load finished");
+}
+
+- (UIWebView*)webView{
+    
+    if (!_webView) {
+        _webView = [[UIWebView alloc] init];
+        _webView.delegate = self;
+//        [_webView setPaginationMode:UIWebPaginationModeTopToBottom];
+        
+        
+    }
+    
+    return _webView;
 }
 
 @end

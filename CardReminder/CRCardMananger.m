@@ -40,8 +40,8 @@
        
         //update model info
         crad.objectId = obj.objectId;
-        crad.lastTime = [obj.updatedAt timeIntervalSince1970];
-        crad.insertTime = [obj.createdAt timeIntervalSince1970];
+        crad.lastTime = obj.updatedAt;
+        crad.insertTime = obj.createdAt;
         
         comletion(succeeded);
     }];
@@ -60,7 +60,7 @@
 }
 
 - (BOOL)checkHasNewCard{
-    return YES;
+    return [[self getCardsFrom:0] count] > 0;
 }
 
 - (NSArray*)getCardsFrom:(long long)time {

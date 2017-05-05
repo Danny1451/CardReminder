@@ -21,6 +21,8 @@
 @property (nonatomic,strong) CRCardModel* currentCard;
 @property (nonatomic,assign) NSInteger currentIndex;
 @property (nonatomic,strong) CRBaseCardView *cardView;
+@property (nonatomic,strong) NSTimer *timer;
+@property (nonatomic,assign) NSInteger coatTime;
 
 @end
 
@@ -51,9 +53,19 @@
 }
 
 - (void)initData{
+    dispatch_queue_t queue = dispatch_queue_create("myquute", DISPATCH_QUEUE_CONCURRENT);
     
+    
+    queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
+        
+    });
     self.currentCard = self.datas[self.currentIndex];
-    
+    self.currentCard.url = @"https://juejin.im";
+//    self.currentCard.type = kCRCardTypeWeb;
+    self.coatTime = 0;
 }
 
 - (void)initView{
@@ -61,9 +73,8 @@
     //设置名称
     [self.cardTitle setText:self.currentCard.title];
     
-    self.currentCard.type = kCRCardTypeWeb;
+
     self.cardView = [CRBaseCardView cardViewWithCard:self.currentCard];
-//    [self.cardView setFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:self.cardView];
     
     UIEdgeInsets padding = UIEdgeInsetsMake(150, 20, 100, 20);
@@ -84,18 +95,29 @@
     
     
   
-    
+    [self startRecordTime];
 }
 
 
 - (void)dealloc{
     
-    TRACE(@"dealloc view");
+   
+    TRACE(@"dealloc cardview");
 }
 
 //初始化卡片
 - (void)initCard{
     
+    @synchronized (self) {
+        //do something
+    }
+    
+    NSArray *array = [NSArray array];
+    
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+    }];
+
 }
 
 - (void)layoutPageSubviews{
@@ -110,36 +132,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)startRecordTime{
+    
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        TRACE(@"spend %ld s" , self.coatTime);
+        self.coatTime += 1;
+    }];
+    
+    [self.timer setFireDate:[NSDate distantPast]];
+    [self.timer fire];
+}
+
+- (void)stopRecordAndReport{
+    
+    TRACE(@" finally spend %ld s" , self.coatTime);
+    [self.timer invalidate];
+    self.timer = nil;
+}
 
 #pragma mark - event response
 - (IBAction)readAction:(id)sender {
     
+    [self.cardView showView];
+    
+    [self stopRecordAndReport];
 
-    CABasicAnimation *rotateAnima = [CABasicAnimation animationWithKeyPath:@"transform"];
-    rotateAnima.duration = 1.5;
-    
-//    rotateAnima.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 200, 200)];
-    // 绕着(0, 0, 1)这个向量轴 Z 轴，顺时针旋转45°(M_PI_4)
-    rotateAnima.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 1, 0)];
-
-    [self.cardView.layer addAnimation:rotateAnima forKey:@"B"];
-
-    
-    
-    
-//    [UIView transitionWithView:self.cardView duration:2.0f options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
-//        self.cardView.tag++;
-//        
-//        self.cardView.backgroundColor = (0 == self.cardView.tag % 2) ? [UIColor greenColor] : [UIColor blueColor];
-//        
-//        
-//    } completion:^(BOOL finished) {
-//        
-//    }];
 }
 - (IBAction)exitAction:(id)sender {
     
-    [self performSegueWithIdentifier:@"showTab" sender:self];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        [self stopRecordAndReport];
+        
+    }];
+//    [self performSegueWithIdentifier:@"showTab" sender:self];
 }
 
 - (IBAction)laterAction:(id)sender {
@@ -165,6 +192,12 @@
 - (IBAction)passAction:(id)sender {
     
    
+    [self.currentCard addViewTimesObject:@{@"time":@123,@"length":@10} withCompleteHandler:^(BOOL isSuccess) {
+        
+        if (isSuccess) {
+            TRACE(@"更新成功");
+        }
+    }];
 }
 
 

@@ -11,9 +11,13 @@
 		A7CE2B3DA69635F31BF638DF /* libPods-CardReminder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA11913EDFF27EC26D28DCF9 /* libPods-CardReminder.a */; };
 		C10CF4B51EB098A500926C99 /* UIViewController+CRVCAop.m in Sources */ = {isa = PBXBuildFile; fileRef = C10CF4B41EB098A500926C99 /* UIViewController+CRVCAop.m */; };
 		C10CF4BE1EB0A25700926C99 /* CRCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10CF4BD1EB0A25700926C99 /* CRCardViewController.xib */; };
+		C1A0D43E1EB32FBC0052B9E2 /* CRCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0D43C1EB32FBC0052B9E2 /* CRCardListViewController.m */; };
+		C1A0D43F1EB32FBC0052B9E2 /* CRCardListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A0D43D1EB32FBC0052B9E2 /* CRCardListViewController.xib */; };
+		C1A0D4441EB3309B0052B9E2 /* CRCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0D4421EB3309B0052B9E2 /* CRCardTableViewCell.m */; };
+		C1A0D4451EB3309B0052B9E2 /* CRCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A0D4431EB3309B0052B9E2 /* CRCardTableViewCell.xib */; };
+		C1D161731EB82C9100BB392F /* CRCardTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D161721EB82C9100BB392F /* CRCardTableHeaderView.m */; };
 		C1DF256D1EAEF58800666229 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256C1EAEF58800666229 /* main.m */; };
 		C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF256F1EAEF58800666229 /* AppDelegate.m */; };
-		C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25721EAEF58800666229 /* FirstViewController.m */; };
 		C1DF25761EAEF58800666229 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF25751EAEF58800666229 /* SecondViewController.m */; };
 		C1DF25791EAEF58800666229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DF25771EAEF58800666229 /* Main.storyboard */; };
 		C1DF257B1EAEF58800666229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DF257A1EAEF58800666229 /* Assets.xcassets */; };
@@ -49,12 +53,18 @@
 		C10CF4B31EB098A500926C99 /* UIViewController+CRVCAop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CRVCAop.h"; sourceTree = "<group>"; };
 		C10CF4B41EB098A500926C99 /* UIViewController+CRVCAop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CRVCAop.m"; sourceTree = "<group>"; };
 		C10CF4BD1EB0A25700926C99 /* CRCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRCardViewController.xib; sourceTree = "<group>"; };
+		C1A0D43B1EB32FBC0052B9E2 /* CRCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCardListViewController.h; sourceTree = "<group>"; };
+		C1A0D43C1EB32FBC0052B9E2 /* CRCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCardListViewController.m; sourceTree = "<group>"; };
+		C1A0D43D1EB32FBC0052B9E2 /* CRCardListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRCardListViewController.xib; sourceTree = "<group>"; };
+		C1A0D4411EB3309B0052B9E2 /* CRCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCardTableViewCell.h; path = View/CRCardTableViewCell.h; sourceTree = "<group>"; };
+		C1A0D4421EB3309B0052B9E2 /* CRCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCardTableViewCell.m; path = View/CRCardTableViewCell.m; sourceTree = "<group>"; };
+		C1A0D4431EB3309B0052B9E2 /* CRCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CRCardTableViewCell.xib; path = View/CRCardTableViewCell.xib; sourceTree = "<group>"; };
+		C1D161711EB82C9100BB392F /* CRCardTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCardTableHeaderView.h; path = View/CRCardTableHeaderView.h; sourceTree = "<group>"; };
+		C1D161721EB82C9100BB392F /* CRCardTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCardTableHeaderView.m; path = View/CRCardTableHeaderView.m; sourceTree = "<group>"; };
 		C1DF25681EAEF58800666229 /* CardReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DF256C1EAEF58800666229 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1DF256E1EAEF58800666229 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1DF256F1EAEF58800666229 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C1DF25711EAEF58800666229 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		C1DF25721EAEF58800666229 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		C1DF25741EAEF58800666229 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		C1DF25751EAEF58800666229 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C1DF25781EAEF58800666229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +144,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C1A0D4391EB32FBC0052B9E2 /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				C1A0D4401EB330690052B9E2 /* View */,
+				C1A0D43A1EB32FBC0052B9E2 /* Controller */,
+			);
+			path = CardList;
+			sourceTree = "<group>";
+		};
+		C1A0D43A1EB32FBC0052B9E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1A0D43B1EB32FBC0052B9E2 /* CRCardListViewController.h */,
+				C1A0D43C1EB32FBC0052B9E2 /* CRCardListViewController.m */,
+				C1A0D43D1EB32FBC0052B9E2 /* CRCardListViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1A0D4401EB330690052B9E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1A0D4411EB3309B0052B9E2 /* CRCardTableViewCell.h */,
+				C1A0D4421EB3309B0052B9E2 /* CRCardTableViewCell.m */,
+				C1A0D4431EB3309B0052B9E2 /* CRCardTableViewCell.xib */,
+				C1D161711EB82C9100BB392F /* CRCardTableHeaderView.h */,
+				C1D161721EB82C9100BB392F /* CRCardTableHeaderView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		C1DF255F1EAEF58800666229 = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +202,6 @@
 				C1DF25971EAEFACB00666229 /* GlobalMarcro.h */,
 				C1DF256E1EAEF58800666229 /* AppDelegate.h */,
 				C1DF256F1EAEF58800666229 /* AppDelegate.m */,
-				C1DF25711EAEF58800666229 /* FirstViewController.h */,
-				C1DF25721EAEF58800666229 /* FirstViewController.m */,
 				C1DF25741EAEF58800666229 /* SecondViewController.h */,
 				C1DF25751EAEF58800666229 /* SecondViewController.m */,
 				C1DF259C1EAF03D900666229 /* Class */,
@@ -198,6 +237,7 @@
 		C1DF259C1EAF03D900666229 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C1A0D4391EB32FBC0052B9E2 /* CardList */,
 				C1DF25BC1EAF60D700666229 /* Flash */,
 				C1DF25B91EAF609E00666229 /* CardView */,
 				C1DF25BB1EAF60CB00666229 /* Login */,
@@ -374,8 +414,10 @@
 			files = (
 				C1DF257E1EAEF58800666229 /* LaunchScreen.storyboard in Resources */,
 				C1DF257B1EAEF58800666229 /* Assets.xcassets in Resources */,
+				C1A0D4451EB3309B0052B9E2 /* CRCardTableViewCell.xib in Resources */,
 				C10CF4BE1EB0A25700926C99 /* CRCardViewController.xib in Resources */,
 				C1DF25791EAEF58800666229 /* Main.storyboard in Resources */,
+				C1A0D43F1EB32FBC0052B9E2 /* CRCardListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1DF259F1EAF206C00666229 /* CRUser.m in Sources */,
+				C1D161731EB82C9100BB392F /* CRCardTableHeaderView.m in Sources */,
 				C1DF259B1EAF03B200666229 /* CRMainTabViewController.m in Sources */,
 				C1DF25B11EAF2DA200666229 /* CRBaseCardView.m in Sources */,
 				C1DF25AB1EAF271F00666229 /* CRCardViewController.m in Sources */,
@@ -494,13 +537,14 @@
 				C1DF25C21EAF62F000666229 /* CRUserMananger.m in Sources */,
 				C1DF25761EAEF58800666229 /* SecondViewController.m in Sources */,
 				C1DF25C51EAF665B00666229 /* CRCardMananger.m in Sources */,
+				C1A0D4441EB3309B0052B9E2 /* CRCardTableViewCell.m in Sources */,
 				C1DF25701EAEF58800666229 /* AppDelegate.m in Sources */,
 				C1DF25A81EAF263300666229 /* CRTextCardView.m in Sources */,
 				C1DF25951EAEF99700666229 /* CRLoginViewController.m in Sources */,
 				C10CF4B51EB098A500926C99 /* UIViewController+CRVCAop.m in Sources */,
-				C1DF25731EAEF58800666229 /* FirstViewController.m in Sources */,
 				C1DF25B41EAF319500666229 /* CRCardModel.m in Sources */,
 				C1DF25BF1EAF613D00666229 /* CRFlashViewController.m in Sources */,
+				C1A0D43E1EB32FBC0052B9E2 /* CRCardListViewController.m in Sources */,
 				C1DF256D1EAEF58800666229 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

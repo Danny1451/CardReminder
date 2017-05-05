@@ -103,6 +103,7 @@
     
      NSArray* cards = [[CRCardMananger sharedInstance] getCardsFrom:0];
     CRCardViewController *vc = [[CRCardViewController alloc] initWithCards:cards];
+    
 //    UIStoryboardSegue *su = [[UIStoryboardSegue alloc] initWithIdentifier:@"showCard" source:self destination:vc];
     
 //    CRCardViewController *vc = [CRCardViewController alloc] init
@@ -115,6 +116,8 @@
     [self presentViewController:vc animated:YES completion:^{
         
     }];
+    
+    
 //    [self transToMainTabVC];
 
    

@@ -7,7 +7,7 @@
 //
 
 #import "CRMainTabViewController.h"
-#import "FirstViewController.h"
+#import "CRCardListViewController.h"
 #import "SecondViewController.h"
 
 
@@ -23,7 +23,7 @@
 + (instancetype)initMainTab{
     CRMainTabViewController *mtvc = [[CRMainTabViewController alloc] init];
     
-    FirstViewController *fVC= [[FirstViewController alloc] init];
+    CRCardListViewController *fVC= [[CRCardListViewController alloc] init];
     SecondViewController *secVC =[[SecondViewController alloc] init];
     
     
@@ -42,15 +42,13 @@
     
     
     
-    
-    
-    
     return mtvc;
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     
     

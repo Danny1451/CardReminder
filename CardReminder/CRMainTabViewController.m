@@ -8,11 +8,10 @@
 
 #import "CRMainTabViewController.h"
 #import "CRCardListViewController.h"
-#import "SecondViewController.h"
+#import "CRUserTabViewController.h"
 
 
 @interface CRMainTabViewController ()
-
 
 
 @end
@@ -21,26 +20,9 @@
 
 
 + (instancetype)initMainTab{
+    
+    
     CRMainTabViewController *mtvc = [[CRMainTabViewController alloc] init];
-    
-    CRCardListViewController *fVC= [[CRCardListViewController alloc] init];
-    SecondViewController *secVC =[[SecondViewController alloc] init];
-    
-    
-    UITabBar *tabBar = mtvc.tabBar;
-    mtvc.tabBar.backgroundColor=[UIColor whiteColor];
-//    mtvc.tabBar.tintColor=YiBlue;
-    
-    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
-    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
-    tabBarItem1.title=@"Users";
-    tabBarItem2.title=@"Repositories";
-    
-    
-    
-    mtvc.viewControllers = @[fVC,secVC];
-    
-    
     
     return mtvc;
     
@@ -49,10 +31,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    CRCardListViewController *fVC= [[CRCardListViewController alloc] init];
+    fVC.navigationItem.title = @"卡片";
+    UINavigationController *nFVC = [[UINavigationController alloc] initWithRootViewController:fVC];
+    fVC.tabBarItem.title = @"看看";
+    fVC.tabBarItem.image = [UIImage imageNamed:@"fst"];
+    
+    CRUserTabViewController *secVC =[[CRUserTabViewController alloc] init];
+    secVC.navigationItem.title = @"用户";
+    UINavigationController *nSVC = [[UINavigationController alloc] initWithRootViewController:secVC];
+    nSVC.tabBarItem.title = @"用户";
+    nSVC.tabBarItem.image = [UIImage imageNamed:@"sec"];
+    
+//    self.tabBar.tintColor = [UIColor blackColor];
+    
+    self.tabBar.backgroundColor=[UIColor grayColor];
     
     
     
-    
+    self.viewControllers = @[nFVC,nSVC];
     // Do any additional setup after loading the view.
 }
 

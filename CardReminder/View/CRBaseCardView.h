@@ -19,14 +19,15 @@
 
 @interface CRBaseCardView : UIView
 
-
+@property (nonatomic,strong) UIView *backView;
 @property (nonatomic,strong) CRCardModel *card;
 @property (nonatomic,weak) id<CRBaseCardDelegate> delegate;
 
 + (instancetype)cardViewWithCard:(CRCardModel*) card;
 
-- (void)initView;
+- (void)initBackGround;
 
+- (void)initView;
 - (void)showView;
 
 - (void)viewWillShow;

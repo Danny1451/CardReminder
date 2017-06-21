@@ -8,10 +8,11 @@
 
 #import "CRWebCardView.h"
 #import "CRCardModel.h"
+#import <WebKit/WebKit.h>
 
-@interface CRWebCardView()<UIWebViewDelegate>
+@interface CRWebCardView()<WKUIDelegate>
 
-@property (nonatomic,strong) UIWebView *webView;
+@property (nonatomic,strong) WKWebView *webView;
 
 @end
 
@@ -57,19 +58,20 @@
 }
 
 
--(void)webViewDidStartLoad:(UIWebView *)webView{
-    TRACE(@" load started");
-}
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    TRACE(@" load finished");
-}
+//-(void)webViewDidStartLoad:(UIWebView *)webView{
+//    TRACE(@" load started");
+//}
+//
+//- (void)webViewDidFinishLoad:(UIWebView *)webView{
+//    TRACE(@" load finished");
+//}
 
-- (UIWebView*)webView{
+- (WKWebView*)webView{
     
     if (!_webView) {
-        _webView = [[UIWebView alloc] init];
-        _webView.delegate = self;
+        _webView = [[WKWebView alloc] init];
+        _webView.UIDelegate = self;
 //        [_webView setPaginationMode:UIWebPaginationModeTopToBottom];
         
         

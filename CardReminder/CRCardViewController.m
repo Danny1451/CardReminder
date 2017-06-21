@@ -53,19 +53,13 @@
 }
 
 - (void)initData{
-    dispatch_queue_t queue = dispatch_queue_create("myquute", DISPATCH_QUEUE_CONCURRENT);
     
-    
-    queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
-    
-    dispatch_group_t group = dispatch_group_create();
-    dispatch_group_async(group, queue, ^{
-        
-    });
     self.currentCard = self.datas[self.currentIndex];
     self.currentCard.url = @"https://juejin.im";
 //    self.currentCard.type = kCRCardTypeWeb;
     self.coatTime = 0;
+    
+ 
 }
 
 - (void)initView{
@@ -77,7 +71,7 @@
     self.cardView = [CRBaseCardView cardViewWithCard:self.currentCard];
     [self.view addSubview:self.cardView];
     
-    UIEdgeInsets padding = UIEdgeInsetsMake(150, 20, 100, 20);
+    UIEdgeInsets padding = UIEdgeInsetsMake(100, 10, 80, 10);
     
     [self.cardView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view).with.insets(padding);
@@ -108,16 +102,6 @@
 //初始化卡片
 - (void)initCard{
     
-    @synchronized (self) {
-        //do something
-    }
-    
-    NSArray *array = [NSArray array];
-    
-    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-    }];
-
 }
 
 - (void)layoutPageSubviews{

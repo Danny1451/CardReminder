@@ -26,6 +26,10 @@
 }
 */
 
+- (void)initBackGround{
+    
+}
+
 - (void)initView{
     
     [self setBackgroundColor:[UIColor blueColor]];
@@ -37,12 +41,7 @@
 - (void)showView{
     [super showView];
     
-    
-    self.contentTV.text = @"Even with such a simple example the code needed is quite verbose and quickly becomes unreadable when you have more than 2 or 3 views. Another option is to use Visual Format Language (VFL), which is a bit less long winded. However the ASCII type syntax has its own pitfalls and its also a bit harder to animate as NSLayoutConstraint constraintsWithVisualFormat: returns an array.";
-    [self updateConstraintsIfNeeded];
-    
 
-    
 }
 
 - (void)updateConstraints{

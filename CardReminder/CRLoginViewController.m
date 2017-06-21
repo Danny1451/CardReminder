@@ -7,13 +7,12 @@
 //
 
 #import "CRLoginViewController.h"
-
+#import <SVProgressHUD.h>
 #import <AVOSCloud.h>
 
-
 @interface CRLoginViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *nameTF;
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTF;
 @property (weak, nonatomic) IBOutlet UITextField *pwdTF;
 
 
@@ -55,13 +54,15 @@
         return;
     }
     
+    [SVProgressHUD showWithStatus:@"登录中..."];
     [AVUser logInWithUsernameInBackground:name password:pwd block:^(AVUser * _Nullable user, NSError * _Nullable error) {
         
         if (error) {
             TRACE(@"login failed");
+            [SVProgressHUD showErrorWithStatus:@"登录失败"];
         }else{
             //login sucess
-            
+            [SVProgressHUD showInfoWithStatus:@"登录成功"];
             TRACE(@"%@",[user description]);
             [self transToMainTab];
         }
@@ -81,18 +82,19 @@
     user.username = name;
     user.password = pwd;
     
+    [SVProgressHUD showWithStatus:@"注册中..."];
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
        
-        if (succeeded) {
+        if (!succeeded) {
             TRACE(@"register success");
+            [SVProgressHUD showErrorWithStatus:@"注册失败"];
         }else{
             
-            
+            [SVProgressHUD showInfoWithStatus:@"注册成功"];
             [self loginWithName:name andPwd:pwd];
         }
     }];
 }
-
 
 - (void)transToMainTab{
     [self performSegueWithIdentifier:@"showTab" sender:self];

@@ -133,10 +133,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     }
     
-    //update source
+
     [self.tableView reloadData];
-//    NSIndexSet *indexSet = [[NSIndexSet alloc] initWithIndex:section];
-//    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+
+
 }
 
 
@@ -174,9 +174,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(showDetail && [showDetail boolValue]){
         return cards.count;
     }
-    
     return 0;
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

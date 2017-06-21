@@ -15,7 +15,7 @@
 
 
 @property (nonatomic,strong) NSTimer* animationTimer;
-
+@property (nonatomic,assign) BOOL isShow;
 @end
 
 
@@ -51,7 +51,7 @@
     self.card = card;
     
     //背景设置为黑色
-//    self.backgroundColor = [UIColor blackColor];
+    self.backgroundColor = [UIColor grayColor];
     
     //增加阴影
     self.layer.shadowColor = [[UIColor grayColor] CGColor];
@@ -59,59 +59,94 @@
     self.layer.shadowRadius = 5;
     self.layer.shadowOpacity = 0.5;
     
+    
+    self.isShow = false;
+    
+    [self addSubview:self.backView];
+    
+    
     [self initView];
+    [self initBackGround];
     
     
+    [self bringSubviewToFront:self.backView];
+    //初始化为反的
+    self.layer.transform = CATransform3DMakeRotation(M_PI, 0, 1, 0);
     
     return self;
 }
 
+- (void)updateConstraints{
+    [super updateConstraints];
+    
+    [self.backView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.center.equalTo(self);
+        make.height.equalTo(self);
+        make.width.equalTo(self);
+        
+    }];
+}
 
 - (void)showView{
     
+    int rotateTime = 1;
+    
+    if (!self.isShow) {
+        CABasicAnimation *rotateAnima = [CABasicAnimation animationWithKeyPath:@"transform"];
+        
+        rotateAnima.duration = rotateTime;
+        rotateAnima.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 1, 0)];
+        rotateAnima.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0, 0, 0)];
+        rotateAnima.removedOnCompletion = NO;
+        rotateAnima.fillMode = kCAFillModeForwards;
+        [self.layer addAnimation:rotateAnima forKey:@"rotate"];
+        
+        
+        CABasicAnimation *opacity = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        opacity.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+        opacity.beginTime = CACurrentMediaTime() + rotateTime * 0.5;
+        opacity.duration = rotateTime * 0.5;
+        opacity.fromValue = @1.0f;
+        opacity.toValue = @0.0f;
+        opacity.removedOnCompletion = NO;
+        opacity.fillMode = kCAFillModeBoth;
+        [self.backView.layer addAnimation:opacity forKey:@"opacity"];
+        
+    }else{
+        
+        
+        CABasicAnimation *rotateAnima = [CABasicAnimation animationWithKeyPath:@"transform"];
+        rotateAnima.duration = rotateTime;
+        rotateAnima.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 0, 0, 0)];
+        rotateAnima.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 1, 0)];
+        rotateAnima.removedOnCompletion = NO;
+        rotateAnima.fillMode = kCAFillModeForwards;
+        [self.layer addAnimation:rotateAnima forKey:@"rotate"];
+        
+        
+        CABasicAnimation *opacity = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        
+        opacity.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        opacity.duration = rotateTime * 0.5;
+        opacity.fromValue = @0.0f;
+        opacity.toValue = @1.0f;
+        opacity.removedOnCompletion = NO;
+        opacity.fillMode = kCAFillModeBoth;
+        [self.backView.layer addAnimation:opacity forKey:@"opacity"];
+    }
+  
+    self.isShow = !self.isShow;
+    
 
-    CABasicAnimation *rotateAnima = [CABasicAnimation animationWithKeyPath:@"transform"];
-    
-    rotateAnima.duration = 2;
-    rotateAnima.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    rotateAnima.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 1, 0)];
-    
-    [self.layer addAnimation:rotateAnima forKey:@"B"];
-    
-    
-    CABasicAnimation *opacity = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    
-    opacity.duration = 1;
-    opacity.fromValue = @1.0f;
-    opacity.toValue = @0.2f;
-    
-    
-    [self.layer addAnimation:opacity forKey:@"A"];
-    
-    
-    
-    
-//    [UIView transitionWithView:self duration:5.0f options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
-//    
-//        _animationTimer = [NSTimer timerWithTimeInterval:0.02 target:self selector:@selector(watchValue) userInfo:nil repeats:YES];
-//        
-//        [[NSRunLoop currentRunLoop] addTimer:_animationTimer forMode:NSRunLoopCommonModes];
-////        self.cardView.tag++;
-//        
-////        self.cardView.backgroundColor = (0 == self.cardView.tag % 2) ? [UIColor greenColor] : [UIColor blueColor];
-//        
-//        
-//    } completion:^(BOOL finished) {
-//        
-//        if (_animationTimer) {
-//            [_animationTimer invalidate];
-//            _animationTimer = nil;
-//        }
-//        
-//    }];
+//    self.layer.transform = CATransform3DMakeRotation(0, 0, 0, 0);
 }
 
 - (void)initView{
+    
+}
+
+- (void)initBackGround{
     
 }
 
@@ -129,5 +164,15 @@
     // Drawing code
 }
 */
+
+- (UIView*)backView{
+    
+    if (!_backView) {
+        _backView = [[UIView alloc] init];
+        [_backView setBackgroundColor:[UIColor blackColor]];
+    }
+    
+    return _backView;
+}
 
 @end

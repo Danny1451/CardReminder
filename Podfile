@@ -14,6 +14,9 @@ pod 'AVOSCloud'
 pod 'AVOSCloudCrashReporting'
 pod 'IQKeyboardManager'
 pod 'Masonry'
+pod 'SDWebImage'
+#pod 'PromiseKit'
+pod 'SVProgressHUD'
 
   target 'CardReminderTests' do
     inherit! :search_paths

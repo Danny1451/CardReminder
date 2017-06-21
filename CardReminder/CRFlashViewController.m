@@ -15,18 +15,24 @@
 #import "AppDelegate.h"
 @interface CRFlashViewController ()
 
+
 @end
 
+
 @implementation CRFlashViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.view setBackgroundColor:[UIColor redColor]];
+//    [self.view setBackgroundColor:[UIColor redColor]];
+    
 }
 
+
 - (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW,
                                  (int64_t)(2 * NSEC_PER_SEC)),
@@ -35,12 +41,13 @@
             
             [self transToLoginVC];
             
+            
         }else{
             
             //check today has new cards
             
             
-            if ([[CRCardMananger sharedInstance] checkHasNewCard]) {
+            if (![[CRCardMananger sharedInstance] checkHasNewCard]) {
                 
                 [self transToCardVC];
                 
@@ -53,6 +60,10 @@
     });
     
     
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
 
 - (void)dealloc{

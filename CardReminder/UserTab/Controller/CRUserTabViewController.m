@@ -56,12 +56,26 @@
     user.headUrl = @"https://raw.githubusercontent.com/Danny1451/BlogPic/master/face/1.jpg";
     
     self.user = user;
+    
+    [self.user addObserver:self forKeyPath:@"cardsNum" options:NSKeyValueObservingOptionNew context:nil];
+    
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary<NSKeyValueChangeKey,id> *)change
+                       context:(void *)context{
+    
+    
+    
+}
+
+- (void)setTestPP:(NSString *)testPP{
+    
+}
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     
 //    [self tableView:tableView didDeselectRowAtIndexPath:indexPath];
 }
@@ -99,7 +113,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CRUserTabSettingCell class])];
         [(CRUserTabSettingCell*)cell updateSwitchCell:@"自动提醒"
                                                status:YES
-                                          andDeledate:(CRUserTabSettingDelegate *) self];
+                                          andDeledate:self];
     }
     
     return cell;

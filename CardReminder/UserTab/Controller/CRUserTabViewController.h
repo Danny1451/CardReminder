@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CRUserTabViewController : UIViewController
+@interface CRUserTabViewController : CRBaseViewController
 
 @end

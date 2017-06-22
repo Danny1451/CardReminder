@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CRLoginViewController : UIViewController
+@interface CRLoginViewController : CRBaseViewController
 
 @end

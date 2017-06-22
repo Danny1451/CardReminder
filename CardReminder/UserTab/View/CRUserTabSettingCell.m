@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *statusSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *infoLab;
 
-@property (nonatomic,weak) CRUserTabSettingDelegate *delegate;
+@property (nonatomic,weak) id <CRUserTabSettingDelegate>  delegate;
 
 
 @end
@@ -24,6 +24,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -34,7 +35,7 @@
 
 - (void)updateSwitchCell:(NSString *)title
                   status:(BOOL)status
-             andDeledate:(CRUserTabSettingDelegate *)delegate{
+             andDeledate:(id<CRUserTabSettingDelegate>) delegate{
     
     [self.titleLab setText:title];
     [self.infoLab setHidden:YES];

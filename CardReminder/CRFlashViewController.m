@@ -14,7 +14,7 @@
 #import "CRCardViewController.h"
 #import "AppDelegate.h"
 @interface CRFlashViewController ()
-
+@property (nonatomic,assign) NSString *test;
 
 @end
 
@@ -24,8 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _test = @"aaaa";
     // Do any additional setup after loading the view.
-    
+//
 //    [self.view setBackgroundColor:[UIColor redColor]];
     
 }

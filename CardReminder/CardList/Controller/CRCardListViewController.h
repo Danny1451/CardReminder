@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CRCardListViewController : UIViewController
+#import "CRBaseViewController.h"
+@interface CRCardListViewController : CRBaseViewController
 
 @end

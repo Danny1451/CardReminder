@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class CRUserTabSettingDelegate;
+@protocol CRUserTabSettingDelegate;
 
 @interface CRUserTabSettingCell : UITableViewCell
 
 - (void)updateInfoCell:(NSString*) title andInfo:(NSString*) info;
-- (void)updateSwitchCell:(NSString*) title status:(BOOL) status andDeledate:(CRUserTabSettingDelegate*) delegate;
+- (void)updateSwitchCell:(NSString*) title status:(BOOL) status
+             andDeledate:(id<CRUserTabSettingDelegate>)  delegate;
 
 @end
 

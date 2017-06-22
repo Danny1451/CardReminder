@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CRCardViewController : UIViewController
+@interface CRCardViewController : CRBaseViewController
 
 
 - (instancetype)initWithCards:(NSArray *) array andIndex:(NSInteger) index;
